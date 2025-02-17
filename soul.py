@@ -51,7 +51,7 @@ def redeem_key(user_id, key):
 @bot.message_handler(commands=['genkey'])
 def handle_genkey(message):
     if message.from_user.id != ADMIN_USER_ID:
-        bot.reply_to(message, "𝙊𝙉𝙇𝙔 𝙊𝙒𝙉𝙀𝙍 𝘿𝙈-> @MoinOwner")
+        bot.reply_to(message, "𝙊𝙉𝙇𝙔 𝙊𝙒𝙉𝙀𝙍 𝘿𝙈-> @xchup")
         return
 
     try:
@@ -101,7 +101,7 @@ def handle_attack(message):
 
     user_data = users.get(user_id)
     if not user_data or user_data['plan'] == 0:
-        bot.reply_to(message, "𝘿𝙈-> @MoinOwner")
+        bot.reply_to(message, "𝘿𝙈-> @xenxeu")
         return
 
     try:
